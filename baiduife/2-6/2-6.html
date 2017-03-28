@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2-6</title>
+    <style>
+        .ctrl, .result{
+            margin: 50px auto;
+            padding: 10px;
+            background: #ccc;
+            width: 600px;
+            border-radius: 5px;
+        }
+        .ctrl{
+            line-height: 0;
+        }
+        .ctrl__input{
+            margin-left: 20px;
+            padding: 3px 8px;
+            border: none;
+        }
+        .ctrl__btn{
+            margin: 0 10px;
+        }
+        .ctrl__btn--left-in{
+            margin-left: 30px;
+        }
+        li{
+            list-style: none;
+            display: inline-block;
+            border-radius: 10%;
+            background-color: #ccc;
+            cursor: pointer;
+            margin: 0 10px;
+            padding: 3px 5px;
+            font-size: 16px;
+        }
+        li:hover{
+            background-color: #888;
+            color: #fff;
+        }
+    </style>
+    <script src="2-6.js"></script>
+</head>
+<body>
+    <div class="ctrl">
+        <input type="number" class="ctrl__input">
+        <button class="ctrl__btn ctrl__btn--left-in">left-in</button>
+        <button class="ctrl__btn ctrl__btn--right-in">right-in</button>
+        <button class="ctrl__btn ctrl__btn--left-out">left-out</button>
+        <button class="ctrl__btn ctrl__btn--right-out">right-out</button>
+    </div>
+    <ul class="result">
+    </ul>
+</body>
+</html>
